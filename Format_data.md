@@ -13,4 +13,6 @@ On note les résultats des matchs
 
 Critère : Age moyen, Valeur du club, nbr match des joueurs sur la saison, prct de nv joueur, duree_de_lentraineur_au_club,dynamique,note
 
-la note évolue en fonction des articles 0 = sur de perdre 100 = sur de gagné
+la note évolue en fonction des articles 0 = sur de perdre 100 = sur de gagner
+38 journées 
+df : match_ID Date Team_Home Team_away Home_age Home_entraineneur_depuis.... Away_.. Result 1

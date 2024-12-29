@@ -63,7 +63,7 @@ Afin de pouvoir travailler avec des API, nous décidons de solliciter l’avis d
 
 Nous ne disposons pas d'assez de données pour entraîner un LSTM. Nous avons donc le choix entre un **XGBoost** et un **RandomForest**. Comme le modèle XGBoost est généralement plus performant (selon les compétitions Kaggle), nous choisissons le premier.
 
-Pour l’hyper-tuning du modèle, nous utilisons le module *optuna*. Grâce à toutes ces nouvelles *features*, nous obtenons une précision (*accuracy*) de 0.69 sur l'entraînement, ce qui est nettement mieux que le résultat initial.
+Pour l’hyper-tuning du modèle, nous utilisons le module *optuna*. Grâce à toutes ces nouvelles *features*, nous obtenons une précision (*accuracy*) de 0.71 sur l'entraînement, ce qui est nettement mieux que le résultat initial.
 
 ## IV - Améliorations futures
 

@@ -8,8 +8,7 @@ df = pd.read_csv("Calendrier_et_resultats_Premier_League_clean.csv", index_col=[
 df.index = pd.to_datetime(df.index)
 
 plt.figure(figsize=(15, 10))
-
-#sns.swarmplot(df, x = "Domicile", y="winner")
+sns.countplot(data=df, x='Domicile', order=df['Domicile'].value_counts().index)
 df2 =df.copy()
 
 clubs = list(set(df2["Domicile"]))
@@ -50,15 +49,15 @@ for club in clubs :
 
 data = pd.read_csv('Calendrier_et_resultats_Premier_League_clean.csv')
 
-# Parse the Date column to datetime
+# On convertit la colonne Date en datetime
 data['Date'] = pd.to_datetime(data['Date'], format='%Y-%m-%d')
 
-# Define a season based on the year of the match (Aug to May)
+# On définit une saison qui commence en août et se termine en mai
 data['Season'] = data['Date'].apply(lambda x: f"{x.year}-{x.year + 1}" if x.month >= 8 else f"{x.year - 1}-{x.year}")
 
 home_wins = data[data['winner'] == 1]
 
-# Group by Season and Domicile and count the wins
+# On groupe par Saison et club pour compter le nombre de victoires à domicile
 home_wins_count = home_wins.groupby(['Season', 'Domicile']).size().reset_index(name='Home Wins')
 
 tools.display_dataframe_to_user(name="Premier League Home Wins by Season and Club", dataframe=home_wins_count)

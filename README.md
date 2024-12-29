@@ -81,6 +81,17 @@ Nous pourrions tester un modèle de *RandomForest*, ou collecter plus de donnée
 
 Afin de vérifier la validité de notre modèle, nous pourrions le valider par *backtesting*, ce qui nous donnerait une approximation plus réaliste de l’efficacité de notre approche.
 
+## V- Détails techniques.
+
+Le projet est composé de 4 documents pythons. Le premier *Scraping_des_donnees* permet de récupérer les données sur internet, et crée tous les fichiers csv, sauf celui commençant par TRAIN
+
+Le second *visualisation_donnees*, permet, comme son nom l'indique, de visualiser nos données collectées.
+
+Le troisième *enrichissement_donnees* permet de créer les nouvelles features, et le csv TRAIN, qui a ces nouvelles features
+
+Finalement le dernier *prediction* est l'entrainement de notre modèle XGBoost.
+
+
 ---
 
 Merci de votre attention,

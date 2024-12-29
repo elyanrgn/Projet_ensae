@@ -85,14 +85,7 @@ Afin de vérifier la validité de notre modèle, nous pourrions le valider par *
 
 ## V- Détails techniques.
 
-Le projet est composé de 4 documents pythons. Le premier *Scraping_des_donnees* permet de récupérer les données sur internet, et crée tous les fichiers csv, sauf celui commençant par TRAIN
-
-Le second *visualisation_donnees*, permet, comme son nom l'indique, de visualiser nos données collectées.
-
-Le troisième *enrichissement_donnees* permet de créer les nouvelles features, et le csv TRAIN, qui a ces nouvelles features
-
-Finalement le dernier *prediction* est l'entrainement de notre modèle XGBoost.
-
+Le seul document python est *main*, et il est autonome. Cependant, des fonctions necessitent beaucoup de temps afin de fonctionner et pour eviter de devoir patientier des heures, tous les ".csv" obtenus via scrapping ou API sont disponibles sur le GitHub.
 
 ---
 

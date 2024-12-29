@@ -27,7 +27,7 @@ Pour ce faire, nous utilisons le module Python *BeautifulSoup*, et nous récupé
 
 Le choix du format de nos données a été l’une des questions cruciales de notre projet. En effet, comme nous avons pour objectif d'entraîner un algorithme de ML, ce choix est primordial !
 
-Nous avons beaucoup hésité, mais finalement, après quelques recherches pour faire le bon choix, nous sommes partis sur le format suivant : un *dataframe* indexé par le temps, afin de pouvoir dégager des tendances temporelles (cette partie n'a que très peu été exploitée par souci de temps). Nous aurons cinq *features* principales (nous en développerons d’autres plus tard) : l’équipe à domicile, l’équipe à l’extérieur, le gagnant (1 si domicile, 0 si nul, -1 si extérieur) la valeur de l'équipe et son âge moyen. Ces colonnes seront respectivement nommées **Domicile**, **Extérieur** et **winner**, **value**, **age**.
+Nous avons beaucoup hésité, mais finalement, après quelques recherches pour faire le bon choix, nous sommes partis sur le format suivant : un *dataframe* indexé par le temps, afin de pouvoir dégager des tendances temporelles (cette partie n'a que très peu été exploitée par souci de temps). Nous aurons cinq *features* principales (nous en développerons d’autres plus tard) : l’équipe à domicile, l’équipe à l’extérieur, le gagnant (1 si domicile, 0 si nul, -1 si extérieur) la valeur de l'équipe et son âge moyen. Ces colonnes seront respectivement nommées **Domicile**, **Extérieur**, **winner**, **value**, **age**.
 
 ### 2 - Traitement des données collectées
 
@@ -63,7 +63,7 @@ Afin de pouvoir travailler avec des API, nous décidons de solliciter l’avis d
 
 Nous ne disposons pas d'assez de données pour entraîner un LSTM. Nous avons donc le choix entre un **XGBoost** et un **RandomForest**. Comme le modèle XGBoost est généralement plus performant (selon les compétitions Kaggle), nous choisissons le premier.
 
-Pour l’hyper-tuning du modèle, nous utilisons le module *optuna*. Grâce à toutes ces nouvelles *features*, nous obtenons une précision (*accuracy*) de 0.69 sur l'entraînement, ce qui est nettement mieux que le résultat initial.
+Pour l’hyper-tuning du modèle, nous utilisons le module *optuna*. Grâce à toutes ces nouvelles *features*, nous obtenons une précision (*accuracy*) de 0.71 sur l'entraînement, ce qui est nettement mieux que le résultat initial.
 
 ## IV - Améliorations futures
 

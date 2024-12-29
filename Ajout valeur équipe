@@ -1,0 +1,65 @@
+pip install requests beautifulsoup4 pandas
+
+import pandas as pd
+import requests
+from bs4 import BeautifulSoup
+import time
+
+# Années à scraper
+start_year = 2016
+end_year = 2024
+
+# URL de base de Transfermarkt
+BASE_URL = "https://www.transfermarkt.fr/premier-league/startseite/wettbewerb/GB1/plus/?saison_id={year}"
+
+# Initialisation d'une liste pour stocker les données
+data = []
+
+# Boucle sur les années
+for year in range(start_year, end_year + 1):
+    print(f"Scraping des données pour la saison {year}...")
+    url = BASE_URL.format(year=year)
+    
+    try:
+        response = requests.get(url, headers={"User-Agent": "Mozilla/5.0"})
+        response.raise_for_status()
+    except requests.exceptions.RequestException as e:
+        print(f"Erreur avec la saison {year}: {e}")
+        continue
+    
+    # Parse le contenu HTML avec BeautifulSoup
+    soup = BeautifulSoup(response.content, "html.parser")
+    
+    # Trouver le tableau principal des équipes
+    table = soup.find("table", {"class": "items"})
+    time.sleep(5)  # Pause pour éviter le blocage par le serveur
+    
+    if table:
+        rows = table.find_all("tr", {"class": ["odd", "even"]})
+        
+        for row in rows:
+            columns = row.find_all("td")
+            if len(columns) > 5:
+                team_name = columns[1].text.strip()
+                avg_age = columns[4].text.strip()
+                market_value = columns[5].text.strip()
+                
+                data.append({
+                    "Season": year,
+                    "Team": team_name,
+                    "Market Value": market_value,
+                    "Average Age": avg_age
+                })
+        print(f"Données de la saison {year} collectées avec succès.")
+    else:
+        print(f"Pas de tableau trouvé pour la saison {year}.")
+
+# Conversion des données en DataFrame
+df = pd.DataFrame(data)
+
+# Sauvegarde du DataFrame en CSV
+df.to_csv("Premier_League_Team_Data_2016_2024.csv", index=False, encoding='utf-8')
+print("Les données ont été exportées avec succès dans 'Premier_League_Team_Data_2016_2024.csv'.")
+
+# Afficher les premières lignes du DataFrame
+print(df.head())

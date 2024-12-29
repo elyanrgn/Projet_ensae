@@ -27,13 +27,15 @@ Pour ce faire, nous utilisons le module Python *BeautifulSoup*, et nous récupé
 
 Le choix du format de nos données a été l’une des questions cruciales de notre projet. En effet, comme nous avons pour objectif d'entraîner un algorithme de ML, ce choix est primordial !
 
-Nous avons beaucoup hésité, mais finalement, après quelques recherches pour faire le bon choix, nous sommes partis sur le format suivant : un *dataframe* indexé par le temps, afin de pouvoir dégager des tendances temporelles (cette partie n'a que très peu été exploitée par souci de temps). Nous aurons trois *features* principales (nous en développerons d’autres plus tard) : l’équipe à domicile, l’équipe à l’extérieur et le gagnant (1 si domicile, 0 si nul, -1 si extérieur). Ces colonnes seront respectivement nommées **Domicile**, **Extérieur** et **winner**.
+Nous avons beaucoup hésité, mais finalement, après quelques recherches pour faire le bon choix, nous sommes partis sur le format suivant : un *dataframe* indexé par le temps, afin de pouvoir dégager des tendances temporelles (cette partie n'a que très peu été exploitée par souci de temps). Nous aurons cinq *features* principales (nous en développerons d’autres plus tard) : l’équipe à domicile, l’équipe à l’extérieur, le gagnant (1 si domicile, 0 si nul, -1 si extérieur) la valeur de l'équipe et son âge moyen. Ces colonnes seront respectivement nommées **Domicile**, **Extérieur** et **winner**, **value**, **age**.
 
 ### 2 - Traitement des données collectées
 
 Malheureusement, les données que nous récupérons par scraping sont bien différentes du format que nous souhaitons. En effet, il y a des lignes vides à supprimer et des valeurs manquantes à compléter.
 
 Une fois cela fait, nous pouvons travailler notre jeu de données afin de n'avoir que ce que nous voulons. Nous supprimons donc la colonne **Tribune**, car elle est redondante avec la colonne indiquant l’équipe à domicile. Nous supprimons la colonne **Arbitre**, car nous supposons qu’il n’influence pas la rencontre (et nous excluons l’hypothèse de la triche). Nous supprimons les colonnes **Affluence**, **Notes**, **xG**, **xG.1**, car on ne peut les connaître qu’une fois le match joué, ce qui ne nous intéresse pas. Nous créons ensuite la colonne **winner** à partir de la colonne **score**, puis nous supprimons cette dernière.
+
+Enfin, nous fusionnons les données de la valeur et de l'âge moyen extraites indépendemment pour former un dataframe à 6 colonnes.
 
 ### 3 - Visualisation des données
 
@@ -69,7 +71,7 @@ Par souci de temps, nous n'avons pas pu explorer et implémenter toutes nos idé
 
 ### 1 - Toujours plus de features !
 
-On peut imaginer de nombreuses autres *features*. Par exemple, la valeur des clubs, la moyenne d'âge des joueurs ou encore le temps depuis lequel l'entraîneur est au club.
+On peut imaginer de nombreuses autres *features*. Par exemple, le temps depuis lequel l'entraîneur est au club.
 
 Ces données sont facilement accessibles à une date T, mais les récupérer pour chaque semaine de chaque saison est une tâche plus difficile.
 

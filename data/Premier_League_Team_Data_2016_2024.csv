@@ -8,7 +8,7 @@ Season,Team,Market Value,Average Age
 2016,FC Everton,"7,98 mio. €",26
 2016,West Ham United,"6,21 mio. €",29
 2016,FC Southampton,"7,33 mio. €",19
-2016,Crystal Palace,"5,08 mio. €",26
+2016,Crystal Palace,"5,08 mio. €",27
 2016,Leicester City,"7,05 mio. €",22
 2016,Stoke City,"5,47 mio. €",27
 2016,FC Watford,"3,82 mio. €",37
@@ -29,7 +29,7 @@ Season,Team,Market Value,Average Age
 2017,Leicester City,"8,95 mio. €",23
 2017,FC Southampton,"10,24 mio. €",16
 2017,West Ham United,"6,36 mio. €",25
-2017,Crystal Palace,"5,38 mio. €",23
+2017,Crystal Palace,"5,38 mio. €",24
 2017,Newcastle United,"5,63 mio. €",27
 2017,FC Watford,"5,30 mio. €",28
 2017,Stoke City,"5,50 mio. €",27
@@ -51,7 +51,7 @@ Season,Team,Market Value,Average Age
 2018,AFC Bournemouth,"8,38 mio. €",17
 2018,FC Southampton,"7,64 mio. €",19
 2018,Wolverhampton Wanderers,"7,57 mio. €",26
-2018,Crystal Palace,"8,03 mio. €",21
+2018,Crystal Palace,"8,03 mio. €",22
 2018,FC Fulham,"7,70 mio. €",26
 2018,Newcastle United,"6,61 mio. €",25
 2018,FC Watford,"6,13 mio. €",32
@@ -63,12 +63,12 @@ Season,Team,Market Value,Average Age
 2019,FC Liverpool,"17,90 mio. €",32
 2019,Tottenham Hotspur,"22,41 mio. €",22
 2019,Chelsea FC,"19,61 mio. €",23
-2019,Manchester United,"15,59 mio. €",26
+2019,Manchester United,"15,59 mio. €",27
 2019,Arsenal FC,"15,99 mio. €",24
 2019,FC Everton,"12,02 mio. €",22
-2019,Leicester City,"12,85 mio. €",20
+2019,Leicester City,"12,85 mio. €",21
 2019,Wolverhampton Wanderers,"7,28 mio. €",30
-2019,West Ham United,"7,99 mio. €",25
+2019,West Ham United,"7,99 mio. €",27
 2019,AFC Bournemouth,"6,98 mio. €",17
 2019,Newcastle United,"6,16 mio. €",25
 2019,Aston Villa,"6,10 mio. €",22
@@ -82,7 +82,7 @@ Season,Team,Market Value,Average Age
 2020,Manchester City,"29,01 mio. €",23
 2020,FC Liverpool,"22,55 mio. €",28
 2020,Chelsea FC,"22,80 mio. €",23
-2020,Manchester United,"19,74 mio. €",25
+2020,Manchester United,"19,74 mio. €",26
 2020,Tottenham Hotspur,"17,16 mio. €",23
 2020,Arsenal FC,"14,74 mio. €",27
 2020,FC Everton,"11,62 mio. €",27
@@ -102,7 +102,7 @@ Season,Team,Market Value,Average Age
 2021,Manchester City,"25,74 mio. €",23
 2021,FC Liverpool,"18,75 mio. €",29
 2021,Chelsea FC,"20,78 mio. €",25
-2021,Manchester United,"17,89 mio. €",28
+2021,Manchester United,"17,89 mio. €",29
 2021,Tottenham Hotspur,"15,32 mio. €",26
 2021,Arsenal FC,"14,95 mio. €",24
 2021,Leicester City,"13,16 mio. €",26
@@ -117,39 +117,39 @@ Season,Team,Market Value,Average Age
 2021,FC Brentford,"7,19 mio. €",27
 2021,Crystal Palace,"8,21 mio. €",16
 2021,Norwich City,"3,63 mio. €",29
-2021,FC Watford,"3,32 mio. €",35
+2021,FC Watford,"3,32 mio. €",36
 2021,Burnley FC,"3,94 mio. €",16
 2022,Manchester City,"33,70 mio. €",21
 2022,Arsenal FC,"23,83 mio. €",25
 2022,Chelsea FC,"23,14 mio. €",27
-2022,Manchester United,"17,66 mio. €",29
+2022,Manchester United,"17,66 mio. €",30
 2022,FC Liverpool,"20,82 mio. €",24
 2022,Tottenham Hotspur,"19,09 mio. €",21
 2022,Newcastle United,"14,25 mio. €",22
 2022,Brighton & Hove Albion,"12,61 mio. €",28
 2022,Aston Villa,"11,85 mio. €",23
 2022,Wolverhampton Wanderers,"11,57 mio. €",34
-2022,Leicester City,"12,91 mio. €",24
-2022,West Ham United,"10,58 mio. €",24
+2022,Leicester City,"12,91 mio. €",25
+2022,West Ham United,"10,58 mio. €",25
 2022,FC Southampton,"9,13 mio. €",25
 2022,FC Everton,"10,33 mio. €",21
 2022,Nottingham Forest,"7,53 mio. €",29
 2022,FC Brentford,"10,31 mio. €",26
 2022,Leeds United,"7,34 mio. €",31
 2022,Crystal Palace,"8,28 mio. €",19
-2022,FC Fulham,"6,28 mio. €",34
+2022,FC Fulham,"6,28 mio. €",35
 2022,AFC Bournemouth,"6,11 mio. €",23
 2023,Manchester City,"40,63 mio. €",21
 2023,Arsenal FC,"30,08 mio. €",23
 2023,Chelsea FC,"18,10 mio. €",26
 2023,FC Liverpool,"21,24 mio. €",30
-2023,Tottenham Hotspur,"20,45 mio. €",27
-2023,Manchester United,"17,57 mio. €",27
+2023,Tottenham Hotspur,"20,45 mio. €",28
+2023,Manchester United,"17,57 mio. €",28
 2023,Aston Villa,"15,77 mio. €",23
 2023,Newcastle United,"14,49 mio. €",21
-2023,Brighton & Hove Albion,"10,70 mio. €",32
-2023,Nottingham Forest,"10,90 mio. €",35
-2023,West Ham United,"13,54 mio. €",19
+2023,Brighton & Hove Albion,"10,70 mio. €",33
+2023,Nottingham Forest,"10,90 mio. €",36
+2023,West Ham United,"13,54 mio. €",20
 2023,Crystal Palace,"11,16 mio. €",17
 2023,Wolverhampton Wanderers,"9,42 mio. €",32
 2023,FC Brentford,"10,21 mio. €",29
@@ -159,23 +159,23 @@ Season,Team,Market Value,Average Age
 2023,Burnley FC,"7,01 mio. €",30
 2023,Sheffield United,"3,39 mio. €",26
 2023,Luton Town,"3,06 mio. €",22
-2024,Manchester City,"47,77 mio. €",16
-2024,Arsenal FC,"47,88 mio. €",18
-2024,Chelsea FC,"31,73 mio. €",20
-2024,FC Liverpool,"38,70 mio. €",18
-2024,Manchester United,"29,43 mio. €",19
-2024,Tottenham Hotspur,"28,90 mio. €",18
-2024,Newcastle United,"20,62 mio. €",14
-2024,Brighton & Hove Albion,"20,92 mio. €",21
-2024,Aston Villa,"24,08 mio. €",17
-2024,West Ham United,"18,30 mio. €",17
-2024,Nottingham Forest,"16,81 mio. €",20
-2024,Crystal Palace,"17,70 mio. €",12
-2024,FC Brentford,"14,41 mio. €",21
-2024,AFC Bournemouth,"16,31 mio. €",17
-2024,Wolverhampton Wanderers,"12,59 mio. €",25
-2024,FC Fulham,"13,91 mio. €",19
-2024,FC Everton,"14,30 mio. €",14
-2024,FC Southampton,"9,58 mio. €",16
-2024,Leicester City,"9,85 mio. €",20
-2024,Ipswich Town,"8,73 mio. €",14
+2024,Manchester City,"30,86 mio. €",27
+2024,Chelsea FC,"20,59 mio. €",30
+2024,Arsenal FC,"27,58 mio. €",26
+2024,FC Liverpool,"27,17 mio. €",21
+2024,Manchester United,"16,84 mio. €",29
+2024,Tottenham Hotspur,"18,96 mio. €",23
+2024,Aston Villa,"16,60 mio. €",24
+2024,Newcastle United,"18,82 mio. €",15
+2024,Brighton & Hove Albion,"13,62 mio. €",33
+2024,Crystal Palace,"13,17 mio. €",18
+2024,AFC Bournemouth,"13,30 mio. €",25
+2024,Nottingham Forest,"14,58 mio. €",23
+2024,Wolverhampton Wanderers,"9,84 mio. €",33
+2024,FC Brentford,"11,26 mio. €",27
+2024,West Ham United,"13,82 mio. €",19
+2024,FC Everton,"9,31 mio. €",21
+2024,FC Fulham,"12,94 mio. €",21
+2024,FC Southampton,"7,38 mio. €",23
+2024,Ipswich Town,"7,72 mio. €",17
+2024,Leicester City,"6,33 mio. €",24
